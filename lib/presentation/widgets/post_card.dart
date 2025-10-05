@@ -17,13 +17,13 @@ class PostCard extends StatefulWidget {
   final int postId;
 
   const PostCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.assetName,
     required this.onTap,
     this.isRead = false,
     required this.postId,
-  }) : super(key: key);
+  });
 
   @override
   State<PostCard> createState() => _PostCardState();
